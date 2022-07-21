@@ -7,30 +7,32 @@
 
 import UIKit
 
+protocol DetailViewProtocol : AnyObject {
+    func update(image: String?)
+    func update(title: String?)
+}
+
 class DetailViewController: UIViewController{
     
     @IBOutlet weak var detailImage: UIImageView!
     @IBOutlet weak var detailTitle: UILabel!
     
-    var characterData: HomeCellModel?
+    var viewModel: DetailViewModelProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        guard let data = characterData else {
-            return
-        }
-
-        update(image: data.image)
-        update(title: data.title)
+        viewModel?.onViewsLoaded()
+        
     }
-    
-    private func update(image: String?){
+}
+
+extension DetailViewController: DetailViewProtocol {
+    func update(image: String?){
         detailImage.image = UIImage(named: image ?? "")
     }
     
-    private func update(title: String?){
+    func update(title: String?){
         detailTitle.text = title
     }
-    
 }

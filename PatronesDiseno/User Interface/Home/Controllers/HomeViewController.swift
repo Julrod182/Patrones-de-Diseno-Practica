@@ -18,6 +18,8 @@ class HomeViewController: UIViewController{
     
     var viewModel: HomeViewModelProtocol?
     
+    private let detailStoryboardName = "Detail"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViews()
@@ -37,11 +39,12 @@ extension HomeViewController: HomeViewProtocol {
     }
     
     func navigateToDetail(with data: HomeCellModel?) {
-        let detailStoryBoard = UIStoryboard(name: "Detail", bundle: nil)
+        let detailStoryBoard = UIStoryboard(name: detailStoryboardName, bundle: nil)
         
-        guard let destination = detailStoryBoard.instantiateInitialViewController() as? DetailViewController else { return }
+        guard let viewData = data,
+              let destination = detailStoryBoard.instantiateInitialViewController() as? DetailViewController else { return }
         
-        destination.characterData = data
+        destination.viewModel = DetailViewModel(data: viewData, viewDelegate: destination)
         
         navigationController?.pushViewController(destination, animated: true)
     }

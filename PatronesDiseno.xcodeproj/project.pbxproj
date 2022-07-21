@@ -22,6 +22,7 @@
 		CE4A25DA2888A0C3003CE631 /* HomeCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A25D92888A0C3003CE631 /* HomeCellModel.swift */; };
 		CE4A25E62888AE81003CE631 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A25E52888AE81003CE631 /* SplashViewModel.swift */; };
 		CE4A25E82889EC33003CE631 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A25E72889EC33003CE631 /* HomeViewModel.swift */; };
+		CE4A25EA2889FCF2003CE631 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A25E92889FCF2003CE631 /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		CE4A25D92888A0C3003CE631 /* HomeCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellModel.swift; sourceTree = "<group>"; };
 		CE4A25E52888AE81003CE631 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		CE4A25E72889EC33003CE631 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		CE4A25E92889FCF2003CE631 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 		CE4A25E12888AD8E003CE631 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				CE4A25E92889FCF2003CE631 /* DetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				CE4A25CC28860750003CE631 /* CharacterModel.swift in Sources */,
 				CE4A25B22885F7AF003CE631 /* SceneDelegate.swift in Sources */,
 				CE4A25C82885FD5F003CE631 /* HomeViewController.swift in Sources */,
+				CE4A25EA2889FCF2003CE631 /* DetailViewModel.swift in Sources */,
 				CE4A25D028887F31003CE631 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
