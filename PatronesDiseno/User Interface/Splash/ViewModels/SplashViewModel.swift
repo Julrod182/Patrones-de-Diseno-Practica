@@ -13,7 +13,7 @@ protocol SplashViewModelProtocol: AnyObject{
 
 final class SplashViewModel {
     
-    weak var viewDelegate: SplashViewProtocol?
+    private weak var viewDelegate: SplashViewProtocol?
     
     init(viewDelegate: SplashViewProtocol?){
         self.viewDelegate = viewDelegate

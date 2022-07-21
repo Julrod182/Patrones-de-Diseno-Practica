@@ -23,6 +23,7 @@
 		CE4A25E62888AE81003CE631 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A25E52888AE81003CE631 /* SplashViewModel.swift */; };
 		CE4A25E82889EC33003CE631 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A25E72889EC33003CE631 /* HomeViewModel.swift */; };
 		CE4A25EA2889FCF2003CE631 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A25E92889FCF2003CE631 /* DetailViewModel.swift */; };
+		CE4A25ED288A0335003CE631 /* CharacterModelToHomeCellModeMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A25EC288A0335003CE631 /* CharacterModelToHomeCellModeMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		CE4A25E52888AE81003CE631 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		CE4A25E72889EC33003CE631 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		CE4A25E92889FCF2003CE631 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		CE4A25EC288A0335003CE631 /* CharacterModelToHomeCellModeMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModelToHomeCellModeMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				CE4A25D128889EE0003CE631 /* App */,
 				CE4A25D228889EFD003CE631 /* Resources */,
 				CE4A25D728889FF0003CE631 /* Domain */,
+				CE4A25EB288A0303003CE631 /* Mappers */,
 				CE4A25D328889F25003CE631 /* User Interface */,
 			);
 			path = PatronesDiseno;
@@ -241,6 +244,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		CE4A25EB288A0303003CE631 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				CE4A25EC288A0335003CE631 /* CharacterModelToHomeCellModeMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -325,6 +336,7 @@
 				CE4A25C82885FD5F003CE631 /* HomeViewController.swift in Sources */,
 				CE4A25EA2889FCF2003CE631 /* DetailViewModel.swift in Sources */,
 				CE4A25D028887F31003CE631 /* DetailViewController.swift in Sources */,
+				CE4A25ED288A0335003CE631 /* CharacterModelToHomeCellModeMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

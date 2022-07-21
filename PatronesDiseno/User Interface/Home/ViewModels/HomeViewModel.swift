@@ -16,17 +16,17 @@ protocol HomeViewModelProtocol{
 
 final class HomeViewModel {
     private weak var viewDelegate: HomeViewProtocol?
+    private let characterModelToHomeCellModelMapper: CharacterModelToHomeCellModelMapperProtocol
     private var viewData = [HomeCellModel]()
     
-    init(viewDelegate: HomeViewProtocol?) {
+    init(viewDelegate: HomeViewProtocol?,
+         characterModelToHomeCellModelMapper: CharacterModelToHomeCellModelMapperProtocol) {
         self.viewDelegate = viewDelegate
+        self.characterModelToHomeCellModelMapper = characterModelToHomeCellModelMapper
     }
     
     private func loadData(){
-       viewData = sampleCharactersData.compactMap {
-           HomeCellModel(image: $0.image, title: "\($0.name) \($0.lastname)" )
-        }
-        
+        viewData = characterModelToHomeCellModelMapper.map(sampleCharactersData)
         viewDelegate?.updateViews()
     }
 }

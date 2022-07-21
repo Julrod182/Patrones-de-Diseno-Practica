@@ -44,7 +44,7 @@ extension HomeViewController: HomeViewProtocol {
         guard let viewData = data,
               let destination = detailStoryBoard.instantiateInitialViewController() as? DetailViewController else { return }
         
-        destination.viewModel = DetailViewModel(data: viewData, viewDelegate: destination)
+        destination.viewModel = DetailViewModel(viewDelegate: destination, data: viewData)
         
         navigationController?.pushViewController(destination, animated: true)
     }
