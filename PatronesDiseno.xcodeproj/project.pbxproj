@@ -20,6 +20,7 @@
 		CE4A25CE28887CC0003CE631 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4A25CD28887CC0003CE631 /* Detail.storyboard */; };
 		CE4A25D028887F31003CE631 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A25CF28887F31003CE631 /* DetailViewController.swift */; };
 		CE4A25DA2888A0C3003CE631 /* HomeCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A25D92888A0C3003CE631 /* HomeCellModel.swift */; };
+		CE4A25E62888AE81003CE631 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A25E52888AE81003CE631 /* SplashViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		CE4A25CD28887CC0003CE631 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		CE4A25CF28887F31003CE631 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CE4A25D92888A0C3003CE631 /* HomeCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellModel.swift; sourceTree = "<group>"; };
+		CE4A25E52888AE81003CE631 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +72,10 @@
 		CE4A25AE2885F7AF003CE631 /* PatronesDiseno */ = {
 			isa = PBXGroup;
 			children = (
-				CE4A25D728889FF0003CE631 /* Domain */,
 				CE4A25BD2885F7B1003CE631 /* Info.plist */,
 				CE4A25D128889EE0003CE631 /* App */,
 				CE4A25D228889EFD003CE631 /* Resources */,
+				CE4A25D728889FF0003CE631 /* Domain */,
 				CE4A25D328889F25003CE631 /* User Interface */,
 			);
 			path = PatronesDiseno;
@@ -99,9 +101,9 @@
 		CE4A25D328889F25003CE631 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
-				CE4A25D628889F58003CE631 /* Detail */,
-				CE4A25D528889F53003CE631 /* Home */,
 				CE4A25D428889F4C003CE631 /* Splash */,
+				CE4A25D528889F53003CE631 /* Home */,
+				CE4A25D628889F58003CE631 /* Detail */,
 			);
 			path = "User Interface";
 			sourceTree = "<group>";
@@ -109,8 +111,9 @@
 		CE4A25D428889F4C003CE631 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				CE4A25C32885F98B003CE631 /* Splash.storyboard */,
-				CE4A25B32885F7AF003CE631 /* SplashViewController.swift */,
+				CE4A25DC2888AC4A003CE631 /* Views */,
+				CE4A25DD2888AC51003CE631 /* Controllers */,
+				CE4A25DE2888AC5C003CE631 /* ViewModels */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -118,10 +121,10 @@
 		CE4A25D528889F53003CE631 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				CE4A25DB2888A0E7003CE631 /* Model */,
-				CE4A25C52885FD3A003CE631 /* Home.storyboard */,
-				CE4A25C72885FD5F003CE631 /* HomeViewController.swift */,
-				CE4A25C92886008D003CE631 /* CellView.swift */,
+				CE4A25DB2888A0E7003CE631 /* Models */,
+				CE4A25E22888ADA8003CE631 /* Views */,
+				CE4A25E32888ADAE003CE631 /* Controllers */,
+				CE4A25E42888ADD5003CE631 /* ViewModels */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -129,9 +132,9 @@
 		CE4A25D628889F58003CE631 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				CE4A25BA2885F7B1003CE631 /* LaunchScreen.storyboard */,
-				CE4A25CD28887CC0003CE631 /* Detail.storyboard */,
-				CE4A25CF28887F31003CE631 /* DetailViewController.swift */,
+				CE4A25E12888AD8E003CE631 /* ViewModels */,
+				CE4A25E02888AD84003CE631 /* Controllers */,
+				CE4A25DF2888AD77003CE631 /* Views */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -152,12 +155,84 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		CE4A25DB2888A0E7003CE631 /* Model */ = {
+		CE4A25DB2888A0E7003CE631 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				CE4A25D92888A0C3003CE631 /* HomeCellModel.swift */,
 			);
-			path = Model;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE4A25DC2888AC4A003CE631 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE4A25BA2885F7B1003CE631 /* LaunchScreen.storyboard */,
+				CE4A25C32885F98B003CE631 /* Splash.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE4A25DD2888AC51003CE631 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE4A25B32885F7AF003CE631 /* SplashViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CE4A25DE2888AC5C003CE631 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CE4A25E52888AE81003CE631 /* SplashViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CE4A25DF2888AD77003CE631 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE4A25CD28887CC0003CE631 /* Detail.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE4A25E02888AD84003CE631 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE4A25CF28887F31003CE631 /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CE4A25E12888AD8E003CE631 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CE4A25E22888ADA8003CE631 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE4A25C52885FD3A003CE631 /* Home.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE4A25E32888ADAE003CE631 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE4A25C92886008D003CE631 /* CellView.swift */,
+				CE4A25C72885FD5F003CE631 /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CE4A25E42888ADD5003CE631 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +311,7 @@
 				CE4A25DA2888A0C3003CE631 /* HomeCellModel.swift in Sources */,
 				CE4A25B42885F7AF003CE631 /* SplashViewController.swift in Sources */,
 				CE4A25CA2886008D003CE631 /* CellView.swift in Sources */,
+				CE4A25E62888AE81003CE631 /* SplashViewModel.swift in Sources */,
 				CE4A25B02885F7AF003CE631 /* AppDelegate.swift in Sources */,
 				CE4A25CC28860750003CE631 /* CharacterModel.swift in Sources */,
 				CE4A25B22885F7AF003CE631 /* SceneDelegate.swift in Sources */,
