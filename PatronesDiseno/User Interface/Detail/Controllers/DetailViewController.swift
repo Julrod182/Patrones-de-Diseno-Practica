@@ -12,17 +12,17 @@ class DetailViewController: UIViewController{
     @IBOutlet weak var detailImage: UIImageView!
     @IBOutlet weak var detailTitle: UILabel!
     
-    var characterData: CharacterModel?
+    var characterData: HomeCellModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        guard let characterData = characterData else {
+        guard let data = characterData else {
             return
         }
 
-        update(image: characterData.image)
-        update(title: "\(characterData.name) \(characterData.lastname)")
+        update(image: data.image)
+        update(title: data.title)
     }
     
     private func update(image: String?){

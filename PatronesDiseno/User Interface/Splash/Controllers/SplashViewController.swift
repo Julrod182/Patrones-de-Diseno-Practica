@@ -18,6 +18,8 @@ class SplashViewController: UIViewController {
     
     var viewModel: SplashViewModelProtocol?
     
+    private let homeStoryboardName: String = "Home"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -46,9 +48,11 @@ extension SplashViewController: SplashViewProtocol {
     }
     func navigateToHome() {
         // TODO: NAVEGAR A SIGUIENTE PANTALLA
-        let homeStoryBoard = UIStoryboard(name: "Home", bundle: nil)
+        let homeStoryBoard = UIStoryboard(name: homeStoryboardName, bundle: nil)
         
-        guard let destinationViewController = homeStoryBoard.instantiateInitialViewController() else {return}
+        guard let destinationViewController = homeStoryBoard.instantiateInitialViewController() as? HomeViewController else {return}
+        
+        destinationViewController.viewModel = HomeViewModel(viewDelegate: destinationViewController)
         
         self.navigationController?.setViewControllers([destinationViewController], animated: true)
     }

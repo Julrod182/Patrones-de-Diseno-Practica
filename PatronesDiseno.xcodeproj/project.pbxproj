@@ -21,6 +21,7 @@
 		CE4A25D028887F31003CE631 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A25CF28887F31003CE631 /* DetailViewController.swift */; };
 		CE4A25DA2888A0C3003CE631 /* HomeCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A25D92888A0C3003CE631 /* HomeCellModel.swift */; };
 		CE4A25E62888AE81003CE631 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A25E52888AE81003CE631 /* SplashViewModel.swift */; };
+		CE4A25E82889EC33003CE631 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4A25E72889EC33003CE631 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		CE4A25CF28887F31003CE631 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CE4A25D92888A0C3003CE631 /* HomeCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellModel.swift; sourceTree = "<group>"; };
 		CE4A25E52888AE81003CE631 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		CE4A25E72889EC33003CE631 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +233,7 @@
 		CE4A25E42888ADD5003CE631 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				CE4A25E72889EC33003CE631 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				CE4A25DA2888A0C3003CE631 /* HomeCellModel.swift in Sources */,
 				CE4A25B42885F7AF003CE631 /* SplashViewController.swift in Sources */,
 				CE4A25CA2886008D003CE631 /* CellView.swift in Sources */,
+				CE4A25E82889EC33003CE631 /* HomeViewModel.swift in Sources */,
 				CE4A25E62888AE81003CE631 /* SplashViewModel.swift in Sources */,
 				CE4A25B02885F7AF003CE631 /* AppDelegate.swift in Sources */,
 				CE4A25CC28860750003CE631 /* CharacterModel.swift in Sources */,
