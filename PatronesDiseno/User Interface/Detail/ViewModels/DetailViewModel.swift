@@ -27,5 +27,7 @@ extension DetailViewModel: DetailViewModelProtocol{
     func onViewsLoaded() {
         viewDelegate?.update(image: viewData.image)
         viewDelegate?.update(title: viewData.title)
+        viewDelegate?.update(description: viewData.description)
+        viewDelegate?.update(score: viewData.score)
     }
 }

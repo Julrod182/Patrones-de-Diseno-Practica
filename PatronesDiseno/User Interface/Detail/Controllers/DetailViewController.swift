@@ -10,12 +10,16 @@ import UIKit
 protocol DetailViewProtocol : AnyObject {
     func update(image: String?)
     func update(title: String?)
+    func update(description: String?)
+    func update(score: Float?)
 }
 
 class DetailViewController: UIViewController{
     
     @IBOutlet weak var detailImage: UIImageView!
     @IBOutlet weak var detailTitle: UILabel!
+    @IBOutlet weak var detailDescription: UITextView!
+    @IBOutlet weak var detailScore: UILabel!
     
     var viewModel: DetailViewModelProtocol?
     
@@ -34,5 +38,13 @@ extension DetailViewController: DetailViewProtocol {
     
     func update(title: String?){
         detailTitle.text = title
+    }
+    
+    func update(description: String?){
+        detailDescription.text = description
+    }
+    
+    func update(score: Float?){
+        detailScore.text = "Score: \(score ?? 0)"
     }
 }
