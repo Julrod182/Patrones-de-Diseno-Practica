@@ -24,13 +24,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTH-dX-mEw">
-                                <rect key="frame" x="97" y="300" width="220" height="19"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
-                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <rect key="frame" x="97" y="300" width="220" height="33.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="LP2-R8-N49">
-                                <rect key="frame" x="50" y="384" width="314" height="478"/>
+                                <rect key="frame" x="25" y="383.5" width="364" height="478.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -38,9 +38,9 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JqU-up-e55">
-                                <rect key="frame" x="322" y="340" width="42" height="21"/>
+                                <rect key="frame" x="322" y="340" width="67" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="linkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -50,16 +50,16 @@
                             <constraint firstItem="JqU-up-e55" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="296" id="2c0-u1-QxH"/>
                             <constraint firstItem="LP2-R8-N49" firstAttribute="top" secondItem="JqU-up-e55" secondAttribute="bottom" constant="23" id="4Op-3N-w0T"/>
                             <constraint firstItem="bTH-dX-mEw" firstAttribute="top" secondItem="gdj-oj-dbF" secondAttribute="bottom" constant="16" id="D5y-bm-LuL"/>
-                            <constraint firstItem="LP2-R8-N49" firstAttribute="top" secondItem="bTH-dX-mEw" secondAttribute="bottom" constant="65" id="I08-0t-c1V"/>
+                            <constraint firstItem="LP2-R8-N49" firstAttribute="top" secondItem="bTH-dX-mEw" secondAttribute="bottom" constant="50" id="I08-0t-c1V"/>
                             <constraint firstItem="JqU-up-e55" firstAttribute="trailing" secondItem="LP2-R8-N49" secondAttribute="trailing" id="KyO-lW-NWW"/>
                             <constraint firstItem="LP2-R8-N49" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="e3Q-j5-j9b"/>
                             <constraint firstItem="gdj-oj-dbF" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="or0-sl-FrI"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="LP2-R8-N49" secondAttribute="trailing" constant="50" id="rfY-PC-ow7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="LP2-R8-N49" secondAttribute="trailing" constant="25" id="rfY-PC-ow7"/>
                             <constraint firstItem="bTH-dX-mEw" firstAttribute="leading" secondItem="gdj-oj-dbF" secondAttribute="leading" id="ugf-ik-NdR"/>
                             <constraint firstItem="JqU-up-e55" firstAttribute="leading" relation="lessThanOrEqual" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="322" id="vR3-u4-0RI"/>
                             <constraint firstItem="gdj-oj-dbF" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="vYg-5x-ajC"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="LP2-R8-N49" secondAttribute="bottom" id="wk7-9a-ybo"/>
-                            <constraint firstItem="LP2-R8-N49" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="ypH-TH-8WQ"/>
+                            <constraint firstItem="LP2-R8-N49" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="ypH-TH-8WQ"/>
                             <constraint firstItem="bTH-dX-mEw" firstAttribute="trailing" secondItem="gdj-oj-dbF" secondAttribute="trailing" id="zmc-mk-1DU"/>
                         </constraints>
                     </view>
@@ -79,11 +79,11 @@
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
